@@ -59,7 +59,10 @@ header{
     
 }
 .carousel__container{
+    /* width: 100%; */
     width: 100%;
+    max-width: 100%;
+    min-height: 320px;
     height: 100%;
     position: relative;
 }
@@ -71,8 +74,8 @@ header{
     position: absolute;
 }
 .carousel__figure{
-   /*  width: 400%; */
-    width: 100%;
+    width: 400%;
+    /* width: 100%; */
     height: 100%;
     display: flex;
     animation: carousel 16s infinite alternate ease-in-out;
@@ -80,7 +83,7 @@ header{
 }
 
 .carousel__img{
-    width: 100%;
+    width: calc(100vw - 17px);
     height: 100%;
     object-fit: cover;
     display: block;
