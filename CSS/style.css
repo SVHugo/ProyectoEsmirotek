@@ -71,7 +71,8 @@ header{
     position: absolute;
 }
 .carousel__figure{
-    width: 400%;
+   /*  width: 400%; */
+    width: 100%;
     height: 100%;
     display: flex;
     animation: carousel 16s infinite alternate ease-in-out;
@@ -286,9 +287,9 @@ form textarea{
 
 /*RESPONSIVE*/
 @media(max-width: 930px){
-    .carousel{
+    /* .carousel{
         height: 285px;
-    }
+    } */
 }
 
 @media(max-width: 768px){
