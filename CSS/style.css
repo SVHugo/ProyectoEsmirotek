@@ -154,7 +154,13 @@ header{
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
     gap: 50px;
+}
+.personas_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .personas__estudiantes{
     display: flex;
@@ -163,7 +169,23 @@ header{
     align-items: center;
     gap: 30px;
     padding: 1em;
+    transition: all 1s;
+    opacity: 0;
 }
+
+.personas__efecto_pc{
+    animation: girar_items 1.5s ease-out forwards;
+}
+@keyframes girar_items {
+    0%{
+        transform: rotateY(90deg);
+        
+    }100%{
+        opacity: 1;
+    }
+
+}
+
 #personas .personas__container__img{
     width: 230px;
     height: 230px;
@@ -328,9 +350,12 @@ form textarea{
         right: 0%;
     }   
     /*PERSONAS*/
-    #personas{
+    /* #personas{
         flex-direction: column;
 
+    } */
+    .personas_container{
+        flex-direction: column;
     }
     /* ICONOS*/
     .contenido-iconos{
