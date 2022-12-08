@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/00879ed65c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>ESMYROTEK</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo"><a href="#index.html">Esmyrotek</a></h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+
+            <a href="#"> Inicio</a>
+            <a href="#"> ¿Quienes Somos? </a>
+            <a href="#"> Nuestros Servicios </a>
+            <a href="#"> Contactanos</a>
+            <label for="check" class="esconder-menu">
+
+                &#215
+
+            </label>
+        </nav>
+
+    </header>
+    <section id="banner" class="carousel">
+        <div class="carousel__container">
+            <figure class="carousel__figure">
+                <img class="carousel__img" src="./IMAGENES/banner_carousel_2.jpg" alt="s">
+                <img class="carousel__img" src="./IMAGENES/banner_carousel_1.jpg" alt="s">
+                <img class="carousel__img" src="./IMAGENES/banner_carousel_3.jpg" alt="s">
+                <img class="carousel__img" src="./IMAGENES/banner_carousel_4.jpg" alt="s">
+            </figure>
+        </div>
+        
+        <div class="contenido-banner">
+            <h3><span>SMYROTEK</span> <br> <br> Technology Solutions </h3>
+            <a href="#" class="boton-empezar">EMPEZAR</a>
+        </div>
+    </section>
+
+    <section id="personas">
+        <div class="personas__estudiantes">
+            <div class="personas__container__img">
+                <img src="/IMAGENES/Foto_Enzo.png" alt="">
+            </div>
+            
+            <h4> EFOM</h4>
+            <p>Estudiante de Ingenieria de Sistemas. </p>
+            <a href="#" class="boton-saber-mas"> Saber Mas</a>
+        </div>
+        <div class="personas__estudiantes">
+            <div class="personas__container__img">
+                <img src="/IMAGENES/banner_2.jpeg" alt="">
+            </div>
+            
+            <h4> NTC</h4>
+            <p>Estudiante de Ingenieria de Sistemas. </p>
+            <a href="#" class="boton-saber-mas"> Saber Mas</a>
+        </div>
+        <div class="personas__estudiantes">
+            <div class="personas__container__img">
+                <img src="/IMAGENES/banner_3.jpeg" alt="">
+            </div>
+            <h4> DPB</h4>
+            <p>Estudiante de Ingenieria de Sistemas. </p>
+            <a href="#" class="boton-saber-mas"> Saber Mas</a>
+        </div>
+    </section>
+
+    <section id="iconos">
+        <div id="contenido-iconos">
+            <div>
+                <i class="fa-solid fa-laptop-medical"></i>
+                <h6>Revision de Ordenadores</h6>
+                <p>Lorem ipsum dolor sit </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h6>Creacion de Landing Page</h6>
+                <p>Lorem ipsum dolor sit </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-medical"></i>
+                <h6>Revision de Ordenadores</h6>
+                <p>Lorem ipsum dolor sit </p>
+            </div>
+        </div>
+        <div class="boton-iconos">
+            <a href="#" class="boton-saber-mas">Saber Mas</a>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h4> Contacta con Nosotros</h4>
+        <form action="#">
+            <div class="datos-form">
+                <div class="nombre">
+                    <label for="nombre"> Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+            </div>
+
+            <div class="email">
+                <label for="email"> Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="mensaje">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="boton-formulario">
+                <a href="#" class="boton-saber-mas">Enviar Mensaje</a>
+            </div>
+        </form>
+    </section>
+    <script src="./JS/show_person.js"></script>
+</body>
+
+</html>
